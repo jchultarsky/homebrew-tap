@@ -1,25 +1,25 @@
 class Stepq < Formula
-  desc "Query, inspect, split and reshape STEP (ISO 10303-21) files — a library and a CLI, no geometry kernel required"
+  desc "Query, inspect, split and reshape STEP (ISO 10303-21) files — a library and a CLI, no geometry kernel needed"
   homepage "https://github.com/jchultarsky/stepq"
-  version "0.3.0"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jchultarsky/stepq/releases/download/v0.3.0/stepq-aarch64-apple-darwin.tar.xz"
-      sha256 "cf8e1367418aca61fd2ab078e001bf1406337530e33931a7d56e80afc45581aa"
+      url "https://github.com/jchultarsky/stepq/releases/download/v0.4.0/stepq-aarch64-apple-darwin.tar.xz"
+      sha256 "e81d5cb394f0a0016ed87cd0879d705edf8fbea18102c24ce9ddb5d31fd2855a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jchultarsky/stepq/releases/download/v0.3.0/stepq-x86_64-apple-darwin.tar.xz"
-      sha256 "a5366e353504da18b88c9c3029b8e529573e444c4e295dfac459b3f37326ce86"
+      url "https://github.com/jchultarsky/stepq/releases/download/v0.4.0/stepq-x86_64-apple-darwin.tar.xz"
+      sha256 "021a3761ee6aef72b6d0f613049c5da9abdf4b4cefdaa01e00ec73080e51e4cc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jchultarsky/stepq/releases/download/v0.3.0/stepq-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "75494a71bfa45858e0a8b497c98c2eab747ed7c29322d261dfab59574df7f333"
+      url "https://github.com/jchultarsky/stepq/releases/download/v0.4.0/stepq-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2a2c3ee11b8e5c7a2e56e3846fa61a91fdc573e48299c23a66193707dea29d2a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jchultarsky/stepq/releases/download/v0.3.0/stepq-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "87d15ea9c4bdab5dbf2f838203a7af1d9e9050c999ae1106a2f8b63432fa9ccd"
+      url "https://github.com/jchultarsky/stepq/releases/download/v0.4.0/stepq-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "be77f695b7fb9b0a9692fca8c973e5c2efd690bf452a32b92fd1c5e766a78c69"
     end
   end
   license "MIT"
